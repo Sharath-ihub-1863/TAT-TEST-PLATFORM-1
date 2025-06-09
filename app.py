@@ -73,6 +73,31 @@ st.markdown("""
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+    
+    /* Hide default Streamlit elements */
+    .stApp > header {
+        background-color: transparent;
+    }
+    
+    .stApp {
+        background-color: #1a1a1a;
+    }
+    
+    /* Remove any white containers */
+    .block-container {
+        background-color: transparent !important;
+    }
+    
+    /* Hide Streamlit menu and footer */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    
+    /* Ensure main content has dark background */
+    .main .block-container {
+        background-color: #1a1a1a;
+        padding-top: 1rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
